@@ -34,9 +34,9 @@ const TextToSpeech = (pros: any) => {
       document?.getElementById("voiceSelect")?.appendChild(option);
     }
   }
-  useEffect(() => {
-    populateVoiceList();
-  }, []);
+  useEffect(()=>{
+  populateVoiceList();
+  },[])
   if (
     typeof speechSynthesis !== "undefined" &&
     speechSynthesis.onvoiceschanged !== undefined

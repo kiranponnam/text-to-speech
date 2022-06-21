@@ -1,7 +1,26 @@
-.App {
+/* .App {
   text-align: center;
   background-color: #2a2a;
   height: 100vh;
+} */
+:root {
+  --bg-color: #2a2a;
+  --text-color: #000;
+}
+
+[data-theme="dark"] {
+  --bg-color: #3f3f3f;
+  --text-color: #fff;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -37,4 +56,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+.toggle-btn {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  margin: 10px;
+  background-color: #3f3f3f;
 }
